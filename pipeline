@@ -32,7 +32,6 @@ stage ('execute playbook on dev env')
 {
 steps
 {
-<<<<<<< HEAD
 script
 {
 if("$(params.jella)" == "dev")
