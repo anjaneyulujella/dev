@@ -55,6 +55,8 @@ ansiblePlaybook credentialsId: 'root', installation: 'ansible', inventory: '/etc
 }
 }
 }
+}
+}
 
 
 
