@@ -34,7 +34,7 @@ steps
 {
 script
 {
-if("$(params.jella)" == "dev")
+if("${params.jella}" == "dev")
 {
 ansiblePlaybook credentialsId: 'root', installation: 'ansible', inventory: '/etc/ansible/hosts', playbook: '/etc/ansible/playbooks/deploy.yml', skippedTags: 'qa'
 }
@@ -48,7 +48,7 @@ steps
 {
 script
 {
-if("$(params.jella)" == "qa")
+if("${params.jella}" == "qa")
 {
 ansiblePlaybook credentialsId: 'root', installation: 'ansible', inventory: '/etc/ansible/hosts', playbook: '/etc/ansible/playbooks/deploy.yml', skippedTags: 'dev'
 }
