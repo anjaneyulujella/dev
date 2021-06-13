@@ -41,7 +41,6 @@ ansiblePlaybook credentialsId: 'root', installation: 'ansible', inventory: '/etc
 }
 }
 }
-//
 stage ('execute playbook on qa env')
 {
 steps
